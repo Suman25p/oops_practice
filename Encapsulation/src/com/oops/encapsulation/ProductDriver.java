@@ -1,0 +1,50 @@
+package com.oops.encapsulation;
+class Product
+{
+	private String productName;
+	private double price;
+	
+	public String getProductName() {
+		return productName;
+	}
+	
+	public void setProductName(String productName) {
+		if(!productName.isEmpty()) {
+			this.productName = productName;
+		}
+	}
+	
+	public double getPrice() {
+		return price;
+	}
+	
+	public void setPrice(double price) {
+		if(price > 0) {
+			this.price = price;
+		}
+	}
+}
+
+public class ProductDriver {
+
+	public static void main(String[] args) {
+		
+		Product product = new Product();
+		product.setProductName("Laptop");
+		product.setPrice(60000);
+		
+		System.out.println("Product Name: " + product.getProductName());
+		System.out.println("Price : " + product.getPrice());
+		
+		product.setProductName("IPhone");
+		product.setPrice(120000);
+		
+		System.out.println("\nProduct Name: " + product.getProductName());
+		System.out.println("Price : " + product.getPrice());
+		
+
+	}
+
+}
+// why encapsulation?
+// Invalid price is restricted.

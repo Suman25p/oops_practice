@@ -1,0 +1,30 @@
+package com.oops.encapsulation;
+
+class Mobile
+{
+	public void setPassword(String password) {
+		if(password.length() >= 6) {
+		}
+	}
+	
+	public String getPassword()
+	{
+		return "Access Denied";
+	}
+}
+
+public class MobileDriver {
+
+	public static void main(String[] args) {
+		
+		Mobile mobile = new Mobile();
+		mobile.setPassword("secure123");
+		
+		System.out.println("Trying to get password: " + mobile.getPassword());
+
+	}
+
+}
+
+//password is hidden from outside access.
+//Trying to get password: Access Denied

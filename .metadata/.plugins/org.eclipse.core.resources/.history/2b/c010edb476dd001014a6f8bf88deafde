@@ -1,0 +1,69 @@
+package com.oops.encapsulation;
+
+import java.util.Scanner;
+
+class UserAccount2
+{
+	private String username;
+	private String password;
+	private int failedAttempts;
+	private boolean isLocked;
+	
+	public UserAccount2(String username, String password) {
+		this.username = username;
+		this.password = password;
+	}
+	
+	public void login(String enteredPassword)
+	{
+		if(isLocked) {
+			throw new RuntimeException("Account is locked. Contact admin.");
+		}
+		
+		while(!password.equals(enteredPassword)) {
+			failedAttempts++;
+			
+			System.out.println("Invalid password. Attempts left: " + (3- failedAttempts));
+			
+			
+			if(failedAttempts == 3) {
+				isLocked = true;
+				throw new RuntimeException("Account locked due to 3 failed attempts");
+			}
+			return;
+		}
+		
+		failedAttempts = 0;
+		System.out.println("Login successful Welcome " + username + "!");
+	}
+}
+
+public class UserSecurityDriver {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		UserAccount2 user = new UserAccount2("Suman", "java123");
+		
+		while(true) {
+			try {
+				System.out.println("Enter Password: ");
+				
+				String enteredPassword = sc.nextLine();
+				
+				user.login(enteredPassword);
+				break;
+			} catch (RuntimeException e) {
+				System.out.println(e.getMessage());
+				
+				if(e.getMessage().contains("locked")) {
+					break;
+				}
+			}
+		}
+		sc.close();
+
+	}
+
+}

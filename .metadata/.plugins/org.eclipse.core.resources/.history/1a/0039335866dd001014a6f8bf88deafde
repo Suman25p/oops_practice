@@ -1,0 +1,36 @@
+package com.oops.encapsulation;
+class BankAccount
+{
+	private double balance;
+	
+	public BankAccount(double _balance)
+	{
+		this.balance = _balance;
+	}
+	
+	public double getBalance()
+	{
+		return balance;
+	}
+	
+	public void deposit(double amount)
+	{
+		if(amount > 0)
+		{
+			balance += amount;
+			System.out.println("Deposited amount : " + amount);
+			System.out.println("Now Total Balance: " + balance);
+		} else
+		{
+			System.out.println("Invalid amount!");
+		}
+	}
+}
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

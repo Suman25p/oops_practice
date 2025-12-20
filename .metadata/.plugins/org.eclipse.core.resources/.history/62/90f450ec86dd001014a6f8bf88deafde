@@ -1,0 +1,46 @@
+package com.oops.encapsulation;
+
+class Order
+{
+	private final int orderId;
+	private String status = "CREATED";
+	
+	public Order(int _orderId)
+	{
+		this.orderId = _orderId;
+	}
+	
+	public int getOrderId()
+	{
+		return orderId;
+	}
+	
+	public String getStatus() {
+		return status;
+	}
+	
+	public void shipOrder() {
+		if(!status.equals("CREATED"))
+			throw new RuntimeException("Order can not be shipped");
+		status = "SHIPPED";
+	}
+	
+	public void deliverOrder() {
+		if(!status.equals("SHIPPED"))
+			throw new RuntimeException("Order not shipped yet");
+		status = "DELIVERED";
+	}
+}
+
+public class OrderDriver {
+
+	public static void main(String[] args) {
+		Order order = new Order(107);
+		order.shipOrder();
+		order.deliverOrder();
+		
+		System.out.println("Order Status: " + order.getStatus());
+
+	}
+
+}

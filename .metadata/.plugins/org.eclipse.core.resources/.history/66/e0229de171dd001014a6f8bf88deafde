@@ -1,0 +1,54 @@
+package com.oops.encapsulation;
+
+class SecureBankAccount
+{
+	private double balance;
+	private int pin;
+	private double dailyLimit = 20000;
+	
+	public SecureBankAccount(int _pin, double _balance)
+	{
+		this.pin = _pin;
+		this.balance = _balance;	
+	}
+	
+	public double getBalance(int enteredPin) {
+		validatePin(enteredPin);
+		return balance;
+	}
+	
+	public void withdraw(int enteredPin, double amount) {
+		validatePin(enteredPin);
+		if(amount <= 0)
+			throw new IllegalArgumentException("Invalid amount");
+		
+		if(amount > dailyLimit)
+			throw new RuntimeException("Daily limit exceeded");
+		
+		if(amount > balance) 
+			throw new RuntimeException("Insufficient balance");
+		
+		balance -= amount;
+		System.out.println("Withdraw successful: " + amount);
+	}
+	
+	private void validatePin(int enteredPin) {
+		if(pin != enteredPin)
+			throw new SecurityException("Invalid PIN");
+	}
+}
+
+public class BankSecureDriver {
+
+	public static void main(String[] args) {
+		
+		SecureBankAccount account = new SecureBankAccount(1234, 50000);
+		
+		account.withdraw(1234,10000);
+		
+		System.out.println("Final Balance : " + account.getBalance(1234));
+		
+
+	}
+
+}

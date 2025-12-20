@@ -1,0 +1,30 @@
+package com.oops.encapsulation;
+
+class Mobile
+{
+	private String password;
+	
+	public void setPassword(String password) {
+		if(password.length() >= 6) {
+			this.password = password;
+		}
+	}
+	
+	public String getPassword()
+	{
+		return "Access Denied";
+	}
+}
+
+public class MobileDriver {
+
+	public static void main(String[] args) {
+		
+		Mobile mobile = new Mobile();
+		mobile.setPassword("secure123");
+		
+		System.out.println("Trying to get password: " + mobile.getPassword());
+
+	}
+
+}

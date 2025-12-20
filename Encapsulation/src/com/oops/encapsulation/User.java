@@ -1,0 +1,54 @@
+package com.oops.encapsulation;
+class ATM
+{
+	private double balance = 5000.0;
+	private String pin = "4213";
+	
+	public void withdrawn(double amountToWithdraw, String enteredPin)
+	{
+		System.out.println("Current Balance: " + balance);
+		if(enteredPin.equals(pin) && amountToWithdraw <= balance)
+		{
+			balance -= amountToWithdraw;
+			System.out.println("\nWithdrawn amount: " + amountToWithdraw);
+			System.out.println("Balance Post Withdraw: " + balance);
+		}else
+		{
+			System.out.println("Error: Incorrect PIN or Insufficient funds.");
+		}
+	}
+	
+	public void deposit(double amount, String enteredPin)
+	{
+		if(enteredPin.equals(pin) && amount > 0)
+		{
+			balance += amount;
+			System.out.println("Deposited Amount: " + amount);
+			System.out.println("After Deposit Balance: " + balance);
+		} else {
+			System.out.println("Error: Incorrect PIN");
+		}
+	}
+	
+	//getter method to fetch encapsulated balance
+	public double getBalance() {
+		return balance;
+	}
+}
+
+public class User {
+
+	public static void main(String[] args) {
+		
+		ATM atm = new ATM();
+		
+	//	atm.balance = 12000; //not allowed to access balance directly. This is encapsulated
+		
+		atm.deposit(1200, "4213");
+		
+		atm.withdrawn(3000, "4213");
+		
+		System.out.println("\nFinal Balance: " + atm.getBalance());
+	}
+
+}

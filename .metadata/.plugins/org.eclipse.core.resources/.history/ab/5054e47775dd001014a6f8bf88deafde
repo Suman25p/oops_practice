@@ -1,0 +1,41 @@
+package com.oops.encapsulation;
+
+class UserAccount {
+	
+	private String userName;
+	private String password;
+	private int failedAttempts;
+	private boolean isLocked;
+	
+	public UserAccount(String _userName, String _password) {
+		this.userName = _userName;
+		this.password = _password;
+	}
+	
+	public void login(String enteredPassword) {
+		if(isLocked)
+			throw new RuntimeException("Account is locked");
+		
+		if(!password.equals(enteredPassword)) {
+			failedAttempts++;
+			if(failedAttempts == 3) {
+				isLocked = true;
+			}
+			throw new RuntimeException("Invalid Password");
+		}
+		
+		failedAttempts = 0;
+		System.out.println("Login successful");	
+	}
+}
+
+public class LoginDriver {
+
+	public static void main(String[] args) {
+	
+		UserAccount user = new UserAccount("Suman", "java123");
+		user.login("java123");
+
+	}
+
+}
