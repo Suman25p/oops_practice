@@ -1,30 +1,38 @@
-0:03:25 Microsoft.Shutdown.TabStripModel.CloseAllTabs
-0:03:25 Microsoft.Shutdown.TabStripModel.CloseTabs
-0:03:25 Microsoft.Shutdown.TabStripModel.CloseTabs_EdgeBeforeClosingAllTabs
-0:03:25 Microsoft.Shutdown.TabStripModel.InternalCloseTabsImpl
-0:03:25 Microsoft.Shutdown.TabStripModel.InternalCloseTabsImpl_TabClosable
-0:03:25 Microsoft.Shutdown.TabStripModel.InternalCloseTabsImpl_ClosingAll
-0:03:25 Microsoft.Shutdown.TabStripModel.CloseWebContentses
-0:03:25 Microsoft.Shutdown.TabStripModel.CloseWebContentses_FastShutdown
-0:03:25 Microsoft.Shutdown.TabStripModel.ShouldRunUnloadListenerBeforeClosing_false
-0:03:25 Tab3 RenderProcessGone
-0:03:25 Microsoft.UnloadController.ClearUnloadState
-0:03:25 Microsoft.Shutdown.TabStripModel.RunUnloadListenerBeforeClosing_false
-0:03:25 Microsoft.Shutdown.TabStripModel.InternalCloseTabsImpl_ClosedAll
-0:03:25 Microsoft.Shutdown.TabStripModel.SendDetachWebContentsNotifications
-0:03:25 Microsoft.UnloadController.ClearUnloadState
-0:03:25 Browser3 Close Tab3 at 0
-0:03:25 Tab3 WebContentsDestroyed
-0:03:25 Microsoft.UnloadController.TabStripEmpty
-0:03:25 Microsoft.UnloadController.IsUnclosableApp_IsNotWebApp
-0:03:25 Microsoft.UnloadController.HasCompletedUnloadProcessing_True
-0:03:25 Microsoft.Shutdown.OnWindowClosing
-0:03:25 Microsoft.UnloadController.IsUnclosableApp_IsNotWebApp
-0:03:25 Microsoft.UnloadController.HasCompletedUnloadProcessing_True
-0:03:25 Microsoft.Shutdown.OnWindowClosingPostClearBrowsingData_NoBrowsingDataCleared
-0:03:25 Widget Closed: BrowserWidget
-0:03:25 Microsoft.UnloadController.HasCompletedUnloadProcessing_True
-0:03:25 Microsoft.Shutdown.OnWindowClosing
-0:03:25 Microsoft.Shutdown.OnWindowClosing_DeleteScheduled
-0:03:25 Microsoft.Last_Browser_Removed
-0:03:25 Microsoft.Shutdown.ShutdownIfNoBrowsers
+1:36:31 Microsoft.Shutdown.OnWindowClosingPostClearBrowsingData_NoBrowsingDataCleared
+1:36:31 Microsoft.Shutdown.TabStripModel.CloseAllTabs
+1:36:31 Microsoft.Shutdown.TabStripModel.CloseTabs
+1:36:31 Microsoft.Shutdown.TabStripModel.CloseTabs_EdgeBeforeClosingAllTabs
+1:36:31 Microsoft.Shutdown.TabStripModel.InternalCloseTabsImpl
+1:36:31 Microsoft.Shutdown.TabStripModel.InternalCloseTabsImpl_TabClosable
+1:36:31 Microsoft.Shutdown.TabStripModel.InternalCloseTabsImpl_ClosingAll
+1:36:31 Microsoft.Shutdown.TabStripModel.CloseWebContentses
+1:36:31 Microsoft.Shutdown.TabStripModel.CloseWebContentses_FastShutdown
+1:36:31 Microsoft.Shutdown.TabStripModel.ShouldRunUnloadListenerBeforeClosing_false
+1:36:31 Tab13 RenderProcessGone
+1:36:31 Microsoft.UnloadController.ClearUnloadState
+1:36:31 Microsoft.Shutdown.TabStripModel.RunUnloadListenerBeforeClosing_false
+1:36:31 Microsoft.Shutdown.TabStripModel.InternalCloseTabsImpl_ClosedAll
+1:36:31 Microsoft.Shutdown.TabStripModel.SendDetachWebContentsNotifications
+1:36:31 Microsoft.UnloadController.ClearUnloadState
+1:36:31 Browser13 Close Tab13 at 0
+1:36:31 Tab13 WebContentsDestroyed
+1:36:31 Microsoft.UnloadController.TabStripEmpty
+1:36:31 Microsoft.UnloadController.IsUnclosableApp_IsNotWebApp
+1:36:31 Microsoft.UnloadController.HasCompletedUnloadProcessing_True
+1:36:31 Microsoft.Shutdown.OnWindowClosing
+1:36:31 Microsoft.UnloadController.IsUnclosableApp_IsNotWebApp
+1:36:31 Microsoft.UnloadController.HasCompletedUnloadProcessing_True
+1:36:31 Microsoft.Shutdown.OnWindowClosingPostClearBrowsingData_NoBrowsingDataCleared
+1:36:31 Widget Closed: BrowserWidget
+1:36:31 Microsoft.UnloadController.HasCompletedUnloadProcessing_True
+1:36:31 Microsoft.Shutdown.OnWindowClosing
+1:36:31 Microsoft.Shutdown.OnWindowClosing_DeleteScheduled
+1:36:31 Microsoft.Last_Browser_Removed
+1:36:31 Microsoft.Shutdown.ShutdownIfNoBrowsers
+1:36:31 Microsoft.Shutdown.SetTryingToQuit_Quitting
+1:36:31 Microsoft.Shutdown.NotifyAppTerminating
+1:36:31 Microsoft.Shutdown.OnAppExiting
+1:36:31 Microsoft.Shutdown.HandleAppExitingForPlatform_Aura
+1:36:31 Microsoft.Shutdown.HandleAppExitingForPlatform_Aura.NotificationUIManager_StartShutdown
+1:36:31 Microsoft.Shutdown.HandleAppExitingForPlatform_Aura.CloseAllSecondaryWidgets
+1:36:31 Shutdown
