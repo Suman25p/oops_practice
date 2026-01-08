@@ -3,10 +3,10 @@ package com.practice.exception;
 public class Student {
 	String name;
 	
-	Student(String name) throws Exception
+	Student(String name) throws RuntimeException
 	{
 		if(name == null) {
-			throw new Exception("Name can not be null");
+			throw new RuntimeException("Name can not be null");
 		}
 		this.name = name;
 		System.out.println("Student Created: " + name);
