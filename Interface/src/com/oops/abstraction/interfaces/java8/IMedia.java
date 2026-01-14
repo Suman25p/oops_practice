@@ -6,6 +6,6 @@ public interface IMedia {
 	
 	default void print()
 	{
-		System.out.println("IMessage.print()...");
+		System.out.println("IMedia.print()...");
 	}
 }
