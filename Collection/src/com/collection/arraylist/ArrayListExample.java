@@ -14,32 +14,14 @@ public class ArrayListExample {
 		name.add("Avishek");
 		name.add("Naren");
 		name.add("Rupa");
-		
 		name.add("Kanchan");
 		name.add("Sweta");
 		name.add("Avishek");
 		name.add("Naren");
 		name.add("Sunita");
-		
+		name.add(null);
+		name.add(null);
 		System.out.println(name);
-		name.remove("Sunita");
-		System.out.println(name);
-		name.add(null);
-		name.add(null);
-		name.add(null);
-		name.add("Kanchan");
-		name.add("Sweta");
-		name.add("Avishek");
-		name.add("Naren");
-		name.add("Sunita");
-		name.add("Sweta");
-		name.add("Avishek");
-		name.add("Naren");
-		name.add("Sunita");
-		name.add("Sweta");
-		name.add("Avishek");
-		name.add("Naren");
-		name.add("Sunita");
 		System.out.println(name.size());
 	}
 
