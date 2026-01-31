@@ -32,12 +32,17 @@ public class Employees {
 		return salary;
 	}
 	
+//	@Override
+//	public String toString()
+//	{
+//		return department + " = " + salary;
+//	}
+	
 	@Override
 	public String toString()
 	{
-		return department + " = " + salary;
+		return id + "-" + name + " - " + department + " = " + salary;
 	}
-	
 	
 	
 }
