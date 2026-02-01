@@ -6,11 +6,11 @@ import java.util.Optional;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
-public class FirstNonRepeatingCharStream {
-
+public class FirstNonRepeatingCharStream 
+{
 	public static void main(String[] args) {
 		
-		String str = "Hello";
+		String str = "LinkedIn";
 		
 		Optional<Map.Entry<Character, Long>> first = str.chars()
 					.mapToObj(c -> (char) c)
@@ -25,5 +25,4 @@ public class FirstNonRepeatingCharStream {
 		
 		System.out.println(first.get());
 	}
-
 }

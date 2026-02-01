@@ -10,10 +10,10 @@ public class EmployeeDriver {
 	public static void main(String[] args) {
 		
 		List<Employee> employees = Arrays.asList(
-				new Employee(101 ," Sonam ", 60000),
-				new Employee(102 ," Rounak ", 60000),
-				new Employee(105 ," Deepak ", 60000),
-				new Employee(108 ," Rahul ", 60000)
+				new Employee(101 ," Sonam ", 67000),
+				new Employee(102 ," Rounak ", 65000),
+				new Employee(105 ," Deepak ", 70000),
+				new Employee(108 ," Rahul ", 50000)
 				);
 		
 		List<Employee> assendingList  = employees.stream()
@@ -26,9 +26,6 @@ public class EmployeeDriver {
 									.sorted(Comparator.comparing(Employee:: getSalary).reversed())
 									.collect(Collectors.toList());
 		
-		System.out.println("Salary in descending order: \n" + descendingList);
-				
-
+		System.out.println("Salary in descending order: \n" + descendingList);			
 	}
-
 }

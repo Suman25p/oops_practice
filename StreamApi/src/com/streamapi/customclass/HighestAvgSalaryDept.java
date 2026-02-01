@@ -14,7 +14,7 @@ public class HighestAvgSalaryDept {
 				new Employees (3, "Chandan", "IT", 80000),
 				new Employees (4, "Nitesh", "Finanace", 60000),
 				new Employees (5, "Rahul", "HR", 65000),
-				new Employees (6, "Nayana", "HR", 55000),
+				new Employees (6, "Naina", "HR", 55000),
 				new Employees (7, "Souvik", "IT", 75000),
 				new Employees (9, "Aryan", "Finanace", 60000),
 				new Employees (8, "Nitesh", "Finanace", 60000),

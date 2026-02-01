@@ -1,5 +1,5 @@
 package com.streamapi.customclass;
-//Count occurances of each element in a list
+//Count occurrences of each element in a list
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
@@ -18,7 +18,7 @@ public class CountOccurrance {
 								.collect(Collectors.groupingBy(Function.identity(),
 								Collectors.counting()));
 		
-		System.out.println("Result: " + map);
+		System.out.println("Result:" + map);
 
 	}
 
